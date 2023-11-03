@@ -17,7 +17,7 @@ const Url = () => {
   const [shortLink, setShortLink] = useState("");
 
   function handleSubmit() {
-    fetch("/shortUrls", {
+    fetch("/api/shortUrls", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -42,7 +42,7 @@ const Url = () => {
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("/validuser", {
+    const res = await fetch("/api/validuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
