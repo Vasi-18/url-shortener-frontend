@@ -80,9 +80,9 @@ const Url = () => {
             <form>
               <div className="form_input">
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
+                  type="link"
+                  name="link"
+                  id="link"
                   placeholder="Enter Your Url"
                   onChange={(e) => setlink(e.target.value)}
                 />
